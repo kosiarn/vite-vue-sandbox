@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import CheckedInput from './components/CheckedInput.vue'
 
 // component specific debug section
 
@@ -20,7 +20,7 @@ function logToAlert(event: Event): void {
   <p>What should we expect?</p>
   <input v-model="variableExpectedValue">
 
-  <HelloWorld v-bind:expectedInput="variableExpectedValue" @correctAnswerPassed="logToAlert" />
+  <checked-input v-bind:expectedInput="variableExpectedValue" @correctAnswerPassed="logToAlert" />
 </template>
 
 <style scoped>
