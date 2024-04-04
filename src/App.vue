@@ -5,7 +5,7 @@ import CheckedInput from './components/CheckedInput.vue'
 // component specific debug section
 
 // checked input updatable expected value testing variable
-const variableExpectedValue = ref('');
+const variableExpectedValue = ref<String>('');
 
 
 // general debugging utils
@@ -24,4 +24,7 @@ function logToAlert(event: Event): void {
 </template>
 
 <style scoped>
+input {
+  font-size: 20px;
+}
 </style>
